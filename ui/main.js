@@ -18,5 +18,5 @@ button.onclick=function(){
     };
     //make the request
     request.open('GET',"http://u900ssunitha.imad.hasura-app.io/",true);
-    request.send(NULL);
+    request.send(null);
 };
