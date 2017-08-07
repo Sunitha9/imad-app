@@ -9,7 +9,7 @@ button.onclick=function(){
             //take action
             if(request.state==200){
                 var counter=request.responseText;
-                var span=document.getElementById('counter');
+                var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
                 
             }
