@@ -77,7 +77,7 @@ function createTemplate(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:article-one',function(req,res){
+app.get('/:articleName',function(req,res){
     //articlename==article-one
     //articles[articlename]=={}content object for articleone
     var articleName=req.params.articleName;
