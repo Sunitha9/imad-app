@@ -19,13 +19,13 @@ var articleone={
          <p> This is the content for my frist article. This is the content for my frist article.This is the content for my frist article.This is the content for my frist article.This is the content for my frist article. This is the content for my frist article.
          </p>`
 };
-fuction createTemplate(data){
-    var title=data.title;
-    vat date=data.date;
-    var heading=data.heading;
-    var content=data.content;
-
-     var htmlTemplate=`
+function createTemplate(data){
+      var title=data.title;
+      var date=data.date;
+      var heading=data.heading;
+      var content=data.content;
+    
+   var htmlTemplate=`
     <html>
     <head>
         <title>
@@ -53,8 +53,8 @@ fuction createTemplate(data){
             </div>
     </body>
 </html>
-`;
- return htmlTemplate;
+ `;
+   return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
