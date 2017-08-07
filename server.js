@@ -9,7 +9,7 @@ var articles={
     'article-one':{
        title:'Article one 1 sunitha',
           heading:'Article one',
-           data:'aug 7,2017',
+           date:'aug 7,2017',
             content: `
              <p> This is the content for my frist article. This is the content for my frist article.This is the content for my frist article.This is the content for my frist article.This is the content for my frist article. This is the content for my frist article.
              </p>
@@ -22,7 +22,7 @@ var articles={
     'article-two':{
         title:'Article two 2 sunitha',
           heading:'Article two',
-           data:'aug 8,2017',
+           date:'aug 8,2017',
             content: `
              <p> This is the content for my second article. 
               </p>`
@@ -30,7 +30,7 @@ var articles={
     'article-three':{
         title:'Article third 3 sunitha',
           heading:'Article three',
-           data:'aug 9,2017',
+           date:'aug 9,2017',
             content: `
              <p> This is the content for my third article. 
               </p>`
