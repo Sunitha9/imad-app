@@ -36,4 +36,4 @@ submit.onclick=fuction(){
     }
     var ul=document.getElementById('namelist');
     ul.innerHTML=list;
-}
+};
