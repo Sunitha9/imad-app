@@ -31,9 +31,7 @@ submit.onclick = function(){
         if(request.readyState===XMLHttpRequest.DONE){
             //take action
             if(request.status===200){
-               //make a request to th server and send the name
-    
-    //capture a list of names and render it as a list
+     //capture a list of names and render it as a list
     var names =request.responseText;
     names=JSON.parse(names);
     var list='';
@@ -51,7 +49,7 @@ submit.onclick = function(){
     //make the request
     var nameInput=document.getElementById('name');
 var name=nameInput.value;
-    request.open('GET','http://u900ssunitha.imad.hasura-app.io/counter/submit-name?name'+name,true);
+    request.open('GET','http://u900ssunitha.imad.hasura-app.io/counter/submit-name?name='+name,true);
     request.send(null);
     
    
