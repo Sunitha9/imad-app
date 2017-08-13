@@ -49,7 +49,7 @@ submit.onclick = function(){
     //make the request
     var nameInput=document.getElementById('name');
     var name=nameInput.value;
-    request.open('GET','http://u900ssunitha.imad.hasura-app.io/counter/submit-name?name =' +name,true);
+    request.open('GET','http://u900ssunitha.imad.hasura-app.io/counter/submit-name?name=' +name,true);
     request.send(null);
     
    
