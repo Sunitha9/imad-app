@@ -17,6 +17,6 @@ button.onclick=function(){
         //not yet done
     };
     //make the request
-    request.open('GET',"http://u900ssunitha.imad.hasura-app.io/",true);
+    request.open('GET','http://u900ssunitha.imad.hasura-app.io/counter',true);
     request.send(null);
 };
