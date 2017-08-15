@@ -84,6 +84,12 @@ function createTemplate(data){
    return htmlTemplate;
 }
 
+
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 var pool=new pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
@@ -94,13 +100,9 @@ app.get('/test-db',function(req,res){
             
         }
         else{
-            res.send(JSON.stringify(result));
+            res.send(JSON.stringify(result.rows));
         }
     });
-});
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
